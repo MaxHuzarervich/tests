@@ -1,4 +1,4 @@
-import {getBanknoteList, getSum, getTriangleType, isEvenIndexSumGreater, isSquareGreater, sum} from "./tasks";
+import {getBanknoteList, getSum, getTriangleType, isEvenIndexSumGreater, isSquareGreater, sum} from "./tasksStdnt";
 
 
 test("get sum", () => {
@@ -31,12 +31,14 @@ test("is Square Greater Than Circle", ()=> {
     const result = isSquareGreater(sCr, sSq)
     expect(result).toBe(true)
 })
+
 test("get banknote list", ()=> {
     // надо бы проверять длинну резалтов и их сумму
-    const result1500 = getBanknoteList(1500)
+    const result2500 = getBanknoteList(2500)
     const result23 = getBanknoteList(23)
-    expect(result1500[0]).toBe(1000)
-    expect(result1500[1]).toBe(500)
+    expect(result2500[0]).toBe(1000)
+    expect(result2500[1]).toBe(1000)
+    expect(result2500[2]).toBe(500)
     expect(result23[0]).toBe(20)
     expect(result23[1]).toBe(2)
     expect(result23[2]).toBe(1)
