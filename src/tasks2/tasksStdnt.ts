@@ -20,8 +20,10 @@ export function sum(...nums: Array<any>): number {
 export function getTriangleType(a: number, b: number, c: number) {
     //...здесь пишем код.
     // В return стоит "заглушка", чтоб typescript не ругался
-
-
+if(a === b && b === c && c === a){return '10'}
+else if(a === b && a !== c && b !== c){return '01'}
+else if(a !== b && b !== c && c !== a){return '11'}
+else if(a < c && b < c){return '00'}            //???????
 }
 
 
